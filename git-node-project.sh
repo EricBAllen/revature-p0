@@ -3,8 +3,11 @@
 # git::initial commit
 # check if all the things are installed
 # WE could use variables assigned to brew and others, and then use the which function. 
-# I was thinking the easiest way to check if they are installed, is to just run them again in this code. That way, if
-# they are not installed, they will be installed, and if they are installed, they will be updated.
+
+
+if ! [ -z ${which git} ] && ! [ -z ${which node} ]; then # this won't work because git is a directory
+
+# do a "short circuit" ?
 
 update=$sudo apt update 
 upgrade=$sudo apt upgrade -y
@@ -22,7 +25,7 @@ If [ -z ]
 #############################....BEGIN REQUIREMENT 2
 ## docker
 # If the first requirement is fulfilled then run the code...
-
+cd /mnt/c/revature/project0
 git init
 npm init -y
 
