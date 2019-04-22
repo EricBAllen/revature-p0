@@ -1,11 +1,69 @@
 #!/bin/bash
-# something in here needs to check that the vm.sh script is running
-# how do we check that the virtual machine is running?
+# if git is installed, then run the rest of it.
+# git::initial commit
+# check if all the things are installed
+# WE could use variables assigned to brew and others, and then use the which function. 
+# I was thinking the easiest way to check if they are installed, is to just run them again in this code. That way, if
+# they are not installed, they will be installed, and if they are installed, they will be updated.
 
-cd /mnt/c/project0
+update=$sudo apt update 
+upgrade=$sudo apt upgrade -y
+install=$sudo apt install -y build-essential curl file git
+
+curl=$sh -c "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh)"
+brewaz=$brew install azure-cli
+brewnode=$brew install node.js
+brewgit=$brew install git 
+brewgcc=$brew install gcc 
+
+If [ -z ]
+
+
+#############################....BEGIN REQUIREMENT 2
+## docker
+# If the first requirement is fulfilled then run the code...
 
 git init
-git add README.md
-git commit -m "first commit"
-git remote add origin https://github.com/EricBAllen/project0.git
-git push -u origin master
+npm init -y
+
+apt_update=$
+mkdir .docker
+
+touch \
+  git-project/.docker/dockerfile \
+  git-project/.docker/dockerup.yaml
+
+## github
+mkdir -p \
+  git-project/.github/ISSUE_TEMPLATE \
+  git-project/.github/PULL_REQUEST_TEMPLATE
+
+touch \
+  git-project/.github/ISSUE_TEMPLATE/issue-template.md \
+  git-project/.github/PULL_REQUEST_TEMPLATE/pull-request-template.md
+
+touch \
+  git-project/.github/CODE-OF-CONDUCT.md \
+  git-project/.github/CONTRIBUTING.md
+
+## root
+mkdir \
+  client \
+  src \
+  test
+
+touch \
+  git-project/client/.gitkeep \
+  git-project/src/.gitkeep \
+  git-project/test/.gitkeep
+
+touch \
+  git-project/.azureup.yaml \
+  git-project/.dockerignore \
+  git-project/.editorconfig \
+  git-project/.gitignore \
+  git-project/.markdownlint.yaml \
+  git-project/CHANGELOG.md \
+  git-project/LICENSE.txt \
+  git-project/README.md
+}
