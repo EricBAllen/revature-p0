@@ -4,8 +4,8 @@
 # check if all the things are installed
 # WE could use variables assigned to brew and others, and then use the which function. 
 
+# We need to look into a specific json file for requirement 4.
 
-if ! [ -z ${which git} ] && ! [ -z ${which node} ]; then # this won't work because git is a directory
 
 # do a "short circuit" ?
 
@@ -19,7 +19,7 @@ brewnode=$brew install node.js
 brewgit=$brew install git 
 brewgcc=$brew install gcc 
 
-If [ -z ]
+
 
 
 #############################....BEGIN REQUIREMENT 2
